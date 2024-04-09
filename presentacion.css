@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+.banner-container{
+    background-color: #000;
+    margin-top: 2rem;
+    border-radius: 10px;
+    max-width: 1450px;
+}
+
+.banner-top{
+    color: #fff;
+}
+
+.banner-top p{
+    border:solid 1px;
+    max-width: 10rem;
+    border-radius: 1rem;
+    display: inline-block;
+    padding: .5rem;
+    background-color: aqua;
+    color: #000;
+}
+
+.banner-content{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.banner-bottom{
+    color: #fff;
+    max-width: 600px;
+    display: inline-block;
+}
+.banner-bottom h2{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.banner-bottom p{
+    padding-bottom: 2rem;
+    line-height: 1.5;
+}
+
+
+/* servicio =------------------------------ */
+.servicio{
+    margin-top: 3rem;
+}
+
+.servicio-h2-p{
+    text-align: center;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+.servicio-h2-p h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.servicio-medio{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.medio-columne1,.medio-columne2{
+    width: 300vw;
+    height: auto;
+    border-radius: 15px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.medio-columne1{
+    background-color: #fff;
+    margin-right: 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+.medio-columne2{
+    background-color: #000;
+}
+
+.medio-columne2 img{
+    max-width: 200px;
+    height: auto;
+}
+
+.servicio-bottom{
+    margin-top: 1.2rem;
+}
+.servicio-bottom-title span{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.servicio-bottom-title{
+    max-width: 810px;
+}
+
+.servicio-bottom-title p{
+    font-size: 1.2rem;
+}
+
+.servicio-bottom-ul{
+    display: flex;
+    margin-top: 1rem;
+    max-width: 810px;
+    overflow: auto;
+
+}
+
+.servicio-bottom-li{
+    background-color: gray;
+    margin-left: 1rem;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.servicio-bottom-text{
+    background-color: white;
+    border-radius: 10px;
+    padding: .5rem;
+    position: absolute;
+    /* bottom: 5%; */
+    bottom: 10%;
+    left: 20%;
+}
+
+.servicio-bottom-text h2{
+    font-weight: 900;
+}
+.servicio-bottom-text p{
+    font-size: .8rem;
+}
+
+

@@ -1,0 +1,303 @@
+@charset "utf-8";
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EAEAE3;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+/* herramienta------------------------------------------ */
+
+.container{
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.container-md{
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-btn-down, .header-btn-bars,.header-btn-xmark{
+    display: none;
+}
+
+.header-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.header{
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+.header-nav{
+    background-color: #fff;
+    position: relative;
+}
+
+.header-ul{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.arrow1,.arrow2{
+    display: none;
+}
+
+
+.header-li, .header-li-img{
+    font-weight: 1000;
+    padding: 8px;
+    position: relative;
+}
+
+.header-li:hover{
+    background-color:#babab7;
+    border-radius: 10px;
+}
+.header-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.header-cart{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 13px;
+    right: 50px;
+    font-size: 1.5rem;
+}
+.header-cart a {
+    color: black;
+}
+
+.header-ul2{
+    display: none;
+    background-color: #f2f2eb9e;
+    border-radius: 10px;
+    padding: 10px;
+    border: solid 1px #babab7;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+}
+
+.header-li2{
+    padding: 5px;
+}
+
+.header-li2 a {
+    padding:3px;
+}
+
+.header-li2:hover{
+    background-color:#babab7 ;
+    border-radius:10px;;
+}
+
+
+/* footer--------------------------------- */
+.footer-main{
+    display: flex;
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+
+
+.footer{
+    background-color: rgba(128, 128, 128, 0.614);
+    width: 100%;
+}
+.footer-ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-brands{
+    letter-spacing: 10px;
+}
+
+.fa-brands, .footer-a{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    transition-duration: .2s;
+}
+.footer-a{
+    display: block;
+}
+
+
+.footer-ul li {
+    line-height: 1.5;
+}
+
+.footer-a:hover, .fa-brands:hover{
+    color: #fff;
+    left: 1px;
+    top: 3px;
+}
+
+.footer-contact,.footer-newsletter{
+    margin-top: 10px;
+}
+
+.footer-left{
+    width: 60%;
+}
+.footer-title{
+    margin-bottom: 30px;
+    margin-top: 10px; 
+}
+
+.footer-title, .font-width{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.footer-right{
+    width: 40%;
+}
+
+.footer-right{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.footer legend{
+    font-variant: all-small-caps;
+    font-size: x-large;
+    /* text-align: center; */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.columna-email{
+    border-bottom:5px  rgba(0 ,0 ,0, .7);
+    border-style: solid;
+    border-radius: 10px;
+    width: 80%;
+    margin-top: 10px;
+    outline: none;
+    background-color: transparent;
+}
+
+.btn-enviar{
+    background-color: while;
+    border-radius: 20px;
+}
+
+/* Movil RWD----------------------------------- */
+@media screen and (max-width:480px) {
+    .header-nav{
+        width: 100%;
+        background-color: #fff;
+    }
+
+  .header-ul{
+    flex-direction: column;
+    position: relative;
+    display: none;
+  }
+
+
+
+  .header-li-img{
+    display: none;
+  }
+
+  .header-cart{
+    display: none;
+  }
+  .header-li:hover{
+    background-color: transparent;
+  }
+
+  .header-li a {
+    text-align:center;
+    display: block;
+  }
+
+  .header-ul2{
+    position:relative;
+    top: 5px;
+    left: 0;
+    padding: 0;
+  }
+  .header-li2{
+    width: auto;
+  }
+
+  .header-li2 a{
+    padding: 0;
+  }
+
+  .arrow1,.arrow2{
+    position: absolute;
+    top: 6px;
+    right: 35%;
+  }
+
+  .header-btn-down{
+    display: block;
+    position: absolute;
+    top: 2.4rem;
+    left: 18rem;
+    border: none;
+    background-color: transparent;
+  }
+
+  .header-btn-bars,.header-btn-xmark{
+    display: block;
+    position: absolute;
+    top: .5rem;
+    right: 0;
+    border: none;
+    font-size: 1rem;
+    background-color: transparent;
+  }
+  .header-btn-xmark{
+    display: none;
+  }
+  /* footer---------- */
+  .footer-title{
+    font-size: 1rem;
+  }
+  .footer-a{
+    font-size: .5rem;
+  }
+  .footer-contact, .footer-newsletter{
+    display: none;
+  }
+
+  .footer-right,.footer-left{
+    width: 50%;
+  }
+
+  .columna-email{
+    width: 60%;
+  }
+
+  .footer-right{
+    margin-top: 1rem;
+    font-size: .5rem;
+  }
+
+}
+
