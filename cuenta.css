@@ -102,12 +102,10 @@
 }
 
 .cuenta-form{
-    /* background-color: green; */
     margin-top: 2rem;
 }
 
 .cuenta-input{
-    /* border-bottom: solid 3px ; */
     background-color: transparent;
     border:solid 2px ridge;
     outline: none;
@@ -160,6 +158,18 @@
     margin-left: 2rem;
     text-decoration: none;
     text-shadow: 0 0 7px #333333;
+}
+
+@media screen and (width:480px){
+    .cuenta-icon a{
+        display: block;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        font-size: .8rem;
+    }
+    .cuenta-item >p{
+        font-size: 1rem;
+    }
 }
 
 

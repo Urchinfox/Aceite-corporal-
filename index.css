@@ -7,7 +7,7 @@
 .banner-container{
     text-align: center;
     margin-top: 15px;
-    padding: 100px;
+    padding: 80px;
     margin-bottom: -50px;
 }
 
@@ -61,7 +61,7 @@
 
 .banner-h2{
     margin-bottom: 40px;
-    font-size: 35px;
+    font-size: 2rem;
     animation-fill-mode: forwards;
     animation-name: index-banner-h2;
     animation-duration: .5s;
@@ -82,8 +82,9 @@
 }
 
 .banner-text{
-    margin-top:20px;
+    margin-top:1rem;
     position: relative;
+    line-height: 1.5;
     animation-name: index-banner-text;
     animation-duration: .5s;
     animation-delay: 1.5s;
@@ -263,8 +264,9 @@
 
 }
 
+
 .producto-ul li img{
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     transition-duration: .3s;
 }
@@ -288,6 +290,14 @@
 
 /* MOvil RWD --------------------------- */
 @media screen and (max-width:480px){
+    .banner-h2{
+        margin-bottom: 40px;
+        font-size: 1.5rem;
+    }
+    .banner-container{
+        margin-top: 0;
+    }
+    
     .producto-ul li{
         width: 50%;
     }

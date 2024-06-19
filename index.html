@@ -13,6 +13,7 @@
     <meta property="og:image"              content="https://urchinfox.github.io/nosotros/images/og-index.png">
     <meta property="og:locale"             content="zh_TW">
     <link rel="shortcut icon" href="./image/fav.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/all.css">
     <link rel="stylesheet" href="./style/index.css">
@@ -71,9 +72,6 @@
                 <div class="header-cart">
                     <a href="#"><i class="fa-solid fa-cart-arrow-down"></i></a>
                 </div>
-                <!-- <button class="header-btn header-btn-down" type="button">
-                    <i class="fa-solid fa-caret-down"></i>
-                </button> -->
             </nav>
         
         <div class="header-foot">
@@ -207,7 +205,9 @@
 
     <section class="producto">
     <div class="producto-body container mx-auto">
-        <h2>Los Productos Destacados</h2>
+            <h2 data-aos="zoom-in-up"
+            data-aos-once="true"
+            data-aos-duration="3000"data-aos-mirror	> Los Productos Destacados</h2>
         <ul class="producto-ul">
             <li>
                <a href="javascrip:;"> <img src="./image/coco.png" alt="" width="250" height="250"></a>
@@ -304,6 +304,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/all.js"></script>
     <script src="./js/index.js"></script>
+
+            <!-- AOS特效的JavaScript -->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+            <script>
+                // 執行AOS的程式
+                AOS.init();
+            </script>
 
 </body>
 </html>

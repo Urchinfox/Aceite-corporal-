@@ -29,7 +29,7 @@
                 </li>
                 <li class="header-li">
                     <a href="./presentacion.html" class="header-link">Nosotros</a>
-                    <ul class="header-ul2">
+                    <ul class="header-ul2" id="headerUl2">
                         <li class="header-li2">
                             <a href="#" class="header-link">FAQ</a>
                         </li>
@@ -40,6 +40,9 @@
                             <a href="#" class="header-link">Blog</a>
                         </li>
                     </ul>
+                    <div class="arrow1" id="Arrow1">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>  
                 </li>
                 <li class="header-li-img">
                     <a href="./index.html">
@@ -54,29 +57,34 @@
                     <a href="./cuenta.html" class="header-link">Cuenta</a>
                     <ul class="header-ul2">
                         <li class="header-li2">
-                            <a href="#" class="header-link">Devolucion</a>
+                            <a href="#" class="header-link">DEVOLUCION</a>
                         </li>
                         <li class="header-li2">
-                            <a href="#" class="header-link">Sign In</a>
+                            <a href="#" class="header-link">Sing In</a>
                         </li>
                     </ul>
-                </li>
-        
+                    <div class="arrow2" id="Arrow2">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </li>  
             </ul>
             <div class="header-cart">
                 <a href="#"><i class="fa-solid fa-cart-arrow-down"></i></a>
             </div>
-            <button class="header-btn header-btn-xmark" type="button">
-                <i class="fa-regular fa-circle-xmark"></i>
-            </button>
+            <!-- <button class="header-btn header-btn-down" type="button">
+                <i class="fa-solid fa-caret-down"></i>
+            </button> -->
         </nav>
     
     <div class="header-foot">
-        <button class="header-btn header-btn-bars" type="button">
+        <button class="header-btn header-btn-bars" type="button" id="Hamburguesa">
             <i class="fa-solid fa-bars-progress"></i>
         </button>
+        <button class="header-btn header-btn-xmark" type="button" id="Xmark">
+            <i class="fa-regular fa-circle-xmark"></i>
+        </button>
     </div>
-    </header>
+</header>
 
     <main class="contacto">
         <div class="contacto-container mx-auto container">
@@ -171,7 +179,8 @@
         </div>
     </footer>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/all.js"></script>
 
 </body>
 </html>
